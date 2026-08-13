@@ -1,0 +1,461 @@
+
+        /* ==========================
+           CONFIGURACIÓN GENERAL
+        ========================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f5f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* ==========================
+           HEADER
+        ========================== */
+
+        header {
+            background-color: #5a3825;
+            color: white;
+            padding: 20px 8%;
+        }
+
+        .header-contenido {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo h1 {
+            font-size: 28px;
+        }
+
+        .logo p {
+            font-size: 14px;
+            color: #f5d6a6;
+        }
+
+        /* ==========================
+           MENU
+        ========================== */
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f5c27a;
+        }
+
+        /* ==========================
+           BANNER
+        ========================== */
+
+        .banner {
+            min-height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.45)
+                ),
+                url("../img/banner.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .banner-contenido {
+            max-width: 900px;
+        }
+
+        .banner h2 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+
+            background-color: #d58b3a;
+            color: white;
+
+            padding: 12px 25px;
+            border-radius: 6px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #cda77a;
+            transform: translateY(-2px);
+        }
+
+        /* ==========================
+           SECCIONES
+        ========================== */
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .titulo-seccion {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titulo-seccion h2 {
+            color: #5a3825;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .titulo-seccion p {
+            color: #666;
+        }
+
+        /* ==========================
+           CATEGORÍAS
+        ========================== */
+
+        .categorias {
+            display: grid;
+            grid-template-columns:
+                repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .categoria {
+            background-color: white;
+
+            padding: 30px 20px;
+
+            text-align: center;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 3px 10px rgba(0, 0, 0, 0.08);
+
+            transition: 0.3s;
+        }
+
+        .categoria:hover {
+            transform: translateY(-5px);
+        }
+
+        .categoria .icono {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .categoria h3 {
+            color: #5a3825;
+        }
+
+        /* ==========================
+           PRODUCTOS
+        ========================== */
+
+        .productos {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 25px;
+        }
+
+        .producto {
+            background-color: white;
+
+            border-radius: 30px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 4px 12px rgba(0, 0, 0, 0.10);
+
+            transition: 0.01s;
+        }
+
+        .producto:hover {
+            transform: translateY(-15px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .producto-contenido {
+            padding: 20px;
+        }
+
+        .producto h3 {
+            color: #5a3825;
+            margin-bottom: 8px;
+        }
+
+        .producto p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .precio {
+            display: block;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            color: #c66c21;
+
+            margin-bottom: 15px;
+        }
+
+        /* ==========================
+           PROMOCIÓN
+        ========================== */
+
+        .promocion {
+            background-color: #5a3825;
+            color: white;
+
+            text-align: center;
+        }
+
+        .promocion h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .promocion p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .precio-promocion {
+            font-size: 32px;
+            font-weight: bold;
+
+            color: #f5c27a;
+
+            margin-bottom: 25px;
+        }
+
+        /* ==========================
+           NOSOTROS
+        ========================== */
+
+        .nosotros {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 50px;
+
+            align-items: center;
+        }
+
+        .nosotros img {
+            border-radius: 10px;
+        }
+
+        .nosotros h2 {
+            color: #5a3825;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .nosotros p {
+            margin-bottom: 15px;
+        }
+
+        /* ==========================
+           CONTACTO
+        ========================== */
+
+        .contacto {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 40px;
+        }
+
+        .informacion-contacto h3 {
+            color: #5a3825;
+            margin-bottom: 15px;
+        }
+
+        .informacion-contacto p {
+            margin-bottom: 10px;
+        }
+
+        form {
+            background-color: white;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .campo {
+            margin-bottom: 15px;
+        }
+
+        .campo label {
+            display: block;
+
+            margin-bottom: 5px;
+
+            font-weight: bold;
+        }
+
+        .campo input,
+        .campo textarea,
+        .campo select {
+            width: 100%;
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            font-size: 15px;
+        }
+
+        .campo textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        form button {
+            border: none;
+            cursor: pointer;
+
+            font-size: 16px;
+        }
+
+        /* ==========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background-color: #2d1b12;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px 20px;
+        }
+
+        footer h3 {
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        /* ==========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .categorias {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .productos {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .nosotros,
+            .contacto {
+                grid-template-columns: 1fr;
+            }
+
+            .header-contenido {
+                flex-direction: column;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            nav ul {
+                flex-direction: column;
+
+                text-align: center;
+
+                gap: 10px;
+            }
+
+            .banner h2 {
+                font-size: 34px;
+            }
+
+            .banner p {
+                font-size: 17px;
+            }
+
+            .categorias,
+            .productos {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 40px 5%;
+            }
+
+        }
